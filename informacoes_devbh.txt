@@ -1,0 +1,13 @@
+Aqui será inserido as informações (na ordem em que foram executadas) pertinentes ao desenvolvimento da aplicação, para
+que o rastreamento do que foi feito fique mais fácil de ser feito.
+
+Info 1
+Na seção 5 - aula 49 foi disponibilizado um arquivo para baixar, onde o mesmo foi renomeado como "template" e uma das
+pastas dentro de template (__MACOSX) foi deletada. Dentro da pasta "fusion-opl" foi recortado a pasta "assets" e o
+arquivo "index.html" para serem colados dentro de "template". Após colagem, foi deletado a pasta "fusion-opl". Dentro
+de "assets" foi deletado a pasta "php". O restante das pastas foram recortadas e coladas em "template". Após colagem,
+foi excluído a pasta "assets". Agora, "template" é recortado e colado dentro da pasta do projeto criada pelo próprio
+pycharm (fusion).
+
+
+
