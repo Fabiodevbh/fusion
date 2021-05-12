@@ -1,0 +1,7 @@
+Todos os pacotes baixados para o desenvolvimento da aplicação serão listados aqui, na ordem em que formam baixados.
+
+django (framework)
+psycopg2-binary (biblioteca para BD Postegre SQL)
+gunicorn
+dj-static
+django-stdimage
