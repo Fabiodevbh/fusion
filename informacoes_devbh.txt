@@ -9,5 +9,7 @@ de "assets" foi deletado a pasta "php". O restante das pastas foram recortadas e
 foi excluído a pasta "assets". Agora, "template" é recortado e colado dentro da pasta do projeto criada pelo próprio
 pycharm (fusion).
 
-
+Info 2
+Em settings DATABASES, name, user e password devem ser os mesmos cadastrados no pgAdmin do postgre para que seja
+possível fazermos o acesso ao mesmo.
 
