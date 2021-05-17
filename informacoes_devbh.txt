@@ -13,3 +13,6 @@ Info 2
 Em settings DATABASES, name, user e password devem ser os mesmos cadastrados no pgAdmin do postgre para que seja
 possível fazermos o acesso ao mesmo.
 
+Info 3
+Na pasta na pasta template (dentro da pasta do projeto fusion: fusion -> template), foram copiados as pastas:
+css, fonts, img, js e scss e todas elas foram coladas em static dentro de core (fusion -> core -> static).
