@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,6 +77,8 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -88,6 +91,15 @@ DATABASES = {
     }
 }
 
+No desenvolvimento, nós utilizamos localmente o banco de dados acima... porém, quando vamos publicar nossa aplicação,
+devemos configurar nossa conexão com o BD a seguir.
+
+"""
+
+DATABASES = {
+    'default': dj_database_url.config()
+}
+# O dj_database_url.config() (acima), lê as configurações do Heroku e passa nossos dados para que possamos acessar o BD
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -134,3 +146,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email teste console
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+"""
+Configuração do email de produção
+
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'no-reply@fusion.com.br'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True   # Ele escreveu TSL mas falou TLS
+EMAIL_HOST_PASSWORD = 'fusion'
+DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
+
+"""
+
+LOGOUT_REDIRECT_URL = 'index'  # Ao "deslogarmos", seremos direcionados para a página index
+
