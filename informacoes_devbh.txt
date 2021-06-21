@@ -20,3 +20,13 @@ css, fonts, img, js e scss e todas elas foram coladas em static dentro de core (
 Info 4
 Foi instalado o dj-database-url. Através dele o Heroku passa as informações do nosso host para que possamos utilizar
 o banco de dados
+
+Info 5
+No commit C042... para rodar o coverage, digita-se no terminal: "coverage run manage.py test" e para o coverage nos
+fornecer um relatório do que foi feito, digita-se: "coverage report". Ainda nesse mesmo commit, foi adicionada mais
+uma excessão no gitignore "htmlcov/*" e no terminal foi digitado coverage html, gerando automaticamente um novo
+diretório de nome htmlcov. Vale ressaltar que só foi possível gerar esse diretório após excutarmos os dois primeiros
+códigos citados no início desse comentário. O diretório criado (htmlcov) nada mais é que um relatório de testes em html.
+Dentro desse diretório usando "cd htmlcov" para acessá-lo, digitamos "python -m http.server onde para o instrutor do
+curso, gerou-se um link que foi possível clicar... mas no meu não. Contudo, podemos acessar o relatório gerado através
+de http://127.0.0.1:8000 onde lá podemos clicar em cada teste e ver o que ainda falta ser testado.
